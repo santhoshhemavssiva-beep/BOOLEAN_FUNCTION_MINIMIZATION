@@ -53,10 +53,12 @@ Developed by:SANTHOSH SIVAKUMAR RegisterNumber:25013000
 module EX_02(a,b,c,d,w,x,y,z,f1,f2); input a,b,c,d,w,x,y,z; output f1,f2; wire adash,bdash,cdash,ddash,ydash,p,q,r,s,t,u; not(adash,a); not(bdash,b); not(cdash,c); not(ddash,d); not(ydash,y); and(p,bdash,ddash); and(q,adash,b,d); and(r,a,b,cdash); or(f1,p,q,r);
 
 **RTL realization**
-<img width="808" height="417" alt="Screenshot 2025-10-22 205030" src="https://github.com/user-attachments/assets/dc6a133c-22d0-42dd-82a5-9e9430c2cb78" />
+<img width="935" height="642" alt="652041684-4984a946-9a14-4990-9e0a-98d7b3a7197f" src="https://github.com/user-attachments/assets/82d28b12-d552-4be2-a39d-fc4364849811" />
+
 
 **Output:**
-<img width="818" height="532" alt="Screenshot 2025-10-22 205435" src="https://github.com/user-attachments/assets/dd8caaf3-8971-4919-a941-9c6a70189376" />
+<img width="935" height="582" alt="652042194-6e404397-45ae-4e0f-876d-755e23be44bd" src="https://github.com/user-attachments/assets/7d3dd5f8-a412-4280-a926-86c1ca0617a8" />
+
 
 **Result:**
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
