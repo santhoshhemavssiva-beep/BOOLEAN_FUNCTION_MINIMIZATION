@@ -48,6 +48,9 @@ endmodule
 
 Developed by:SANTHOSH SIVAKUMAR RegisterNumber:25013000
 
+//Program to compute the function f1=a'b'c'd'+ac'd'+b'cd'+a'bcd+bc'd //f2=xy'z+x'y'z+w'xy+wx'y+wxy // simplify the logic using Boolean minimization/k map //compute f2 and write verilog code for f2 as like f1
+
+module EX_02(a,b,c,d,w,x,y,z,f1,f2); input a,b,c,d,w,x,y,z; output f1,f2; wire adash,bdash,cdash,ddash,ydash,p,q,r,s,t,u; not(adash,a); not(bdash,b); not(cdash,c); not(ddash,d); not(ydash,y); and(p,bdash,ddash); and(q,adash,b,d); and(r,a,b,cdash); or(f1,p,q,r);
 
 **RTL realization**
 <img width="808" height="417" alt="Screenshot 2025-10-22 205030" src="https://github.com/user-attachments/assets/dc6a133c-22d0-42dd-82a5-9e9430c2cb78" />
